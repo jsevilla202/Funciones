@@ -7,7 +7,7 @@ public class Ej6 {
 	public static boolean esPrimo(int n) {
 		boolean primo = true;
 		
-		for(int i = 1, k = 2; i!=n;i++) {
+		for(int i = 2, k = 2; i<n;i++) {
 			//Si el resto del número introducido entre el contador es 0, se le suma 1 a la variable "k"
 			if(n%i==0) {
 				k++;
@@ -18,12 +18,7 @@ public class Ej6 {
 				}
 			}
 	}
-		if(primo==false){
-			return false;
-		}
-		else {
-			return true;
-		}
+		return primo;
 	}
 		
 	public static void main(String[] args) {
